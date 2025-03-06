@@ -15,7 +15,8 @@ from aiogram.types import Message
 
 # Initialize bot
 import os
-API_TOKEN = os.environ['7023105791:AAH4l7BZ4DessVguUpok0HNeJ88Zxr1Hl0E']  # ✅ Secure way
+PI_TOKEN = '7023105791:AAH4l7BZ4DessVguUpok0HNeJ88Zxr1Hl0E'  # Note: For production, use os.environ.get('BOT_TOKEN')
+bot = Bot(token=API_TOKEN)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
